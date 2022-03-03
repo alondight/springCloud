@@ -34,7 +34,7 @@ public class UserController {
 	}
 
 	@GetMapping(path = "/{userId}", produces="application/json")
-	public User getUserWithDepartment(@PathVariable(name = "userId") Long userId)
+	public User getUserWithUserId(@PathVariable(name = "userId") Long userId)
 	{
 		return userService.findByUserId(userId);
 	}
