@@ -1,0 +1,41 @@
+eureka:
+  instance:
+    hostname: localhost
+    non-secure-port: 8761
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.non-secure-port}/eureka/
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: reactive
+  cloud:
+    gateway:
+      default-filters:
+      - name: JwtRequestFilter
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: api
+          uri: lb://api
+          predicates:
+            - Path=/api/**
+#          filters:
+#            - RewritePath=/api/?(?<segment>.*), /$\{segment}
+#            - APIRequestFilter
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "gateway"
+
+ 
+jwt:
+  secret: theragenbio
+#http://localhost:9090/actuator/gateway/routes
