@@ -1,0 +1,236 @@
+2022-03-04 10:23:10.654 INFO  425  --- [ main ] o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.theragenbio.gateway.GatewayApplicationTests], using SpringBootContextLoader
+2022-03-04 10:23:10.667 INFO  438  --- [ main ] o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.theragenbio.gateway.GatewayApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-03-04 10:23:10.668 INFO  439  --- [ main ] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.theragenbio.gateway.GatewayApplicationTests]: GatewayApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-03-04 10:23:10.914 INFO  685  --- [ main ] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.theragenbio.gateway.GatewayApplication for test class com.theragenbio.gateway.GatewayApplicationTests
+2022-03-04 10:23:11.195 INFO  966  --- [ main ] o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-03-04 10:23:11.224 INFO  995  --- [ main ] o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@56102e1c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@73511076, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7927bd9f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@532721fd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@410954b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7fb9f71f, org.springframework.test.context.event.EventPublishingTestExecutionListener@3b366632, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@51f49060, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@514eedd8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@617fe9e1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6970140a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1cf2fed4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3af4e0bf]
+2022-03-04 10:23:13.667 INFO  3438 --- [ main ] c.t.gateway.GatewayApplicationTests - Starting GatewayApplicationTests using Java 17.0.1 on LT-joonhyuckpark with PID 13508 (started by joonhyuck.park in C:\java\msa-workspace\gateway)
+2022-03-04 10:23:13.670 INFO  3441 --- [ main ] c.t.gateway.GatewayApplicationTests - The following 1 profile is active: "prod"
+2022-03-04 10:23:13.709 INFO  3480 --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.2.Final
+2022-03-04 10:23:13.782 INFO  3553 --- [ main ] o.s.b.c.config.ConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-03-04 10:23:13.783 INFO  3554 --- [ main ] o.s.b.c.config.ConfigDataLoader - Located environment: name=gateway, profiles=[prod], label=null, version=null, state=null
+2022-03-04 10:23:17.021 INFO  6792 --- [ main ] o.s.c.context.scope.GenericScope - BeanFactory id=c7caf360-56cf-3394-93bc-7b8ca332747f
+2022-03-04 10:23:17.880 INFO  7651 --- [ main ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 10:23:17.890 INFO  7661 --- [ main ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 10:23:17.904 INFO  7675 --- [ main ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 10:23:24.281 INFO  14052 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2022-03-04 10:23:24.282 INFO  14053 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2022-03-04 10:23:24.282 INFO  14053 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2022-03-04 10:23:24.283 INFO  14054 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2022-03-04 10:23:24.283 INFO  14054 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2022-03-04 10:23:24.284 INFO  14055 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2022-03-04 10:23:24.284 INFO  14055 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2022-03-04 10:23:24.284 INFO  14055 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2022-03-04 10:23:24.285 INFO  14056 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2022-03-04 10:23:24.285 INFO  14056 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2022-03-04 10:23:24.285 INFO  14056 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2022-03-04 10:23:24.285 INFO  14056 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2022-03-04 10:23:24.286 INFO  14057 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-03-04 10:23:25.098 INFO  14869 --- [ main ] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 10:23:26.783 INFO  16554 --- [ main ] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2022-03-04 10:23:29.284 WARN  19055 --- [ main ] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 10:23:29.460 INFO  19231 --- [ main ] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-03-04 10:23:29.672 INFO  19443 --- [ main ] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2022-03-04 10:23:29.686 INFO  19457 --- [ main ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 10:23:29.793 INFO  19564 --- [ main ] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-03-04 10:23:29.794 INFO  19565 --- [ main ] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-03-04 10:23:29.795 INFO  19566 --- [ main ] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-03-04 10:23:29.795 INFO  19566 --- [ main ] c.netflix.discovery.DiscoveryClient - Application is null : false
+2022-03-04 10:23:29.795 INFO  19566 --- [ main ] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-03-04 10:23:29.795 INFO  19566 --- [ main ] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2022-03-04 10:23:29.796 INFO  19567 --- [ main ] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-03-04 10:23:30.731 INFO  20502 --- [ main ] c.netflix.discovery.DiscoveryClient - The response status is 200
+2022-03-04 10:23:30.737 INFO  20508 --- [ main ] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022-03-04 10:23:30.745 INFO  20516 --- [ main ] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-03-04 10:23:30.758 INFO  20529 --- [ main ] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1646357010756 with initial instances count: 0
+2022-03-04 10:23:30.771 INFO  20542 --- [ main ] o.s.c.n.e.s.EurekaServiceRegistry - Registering application GATEWAY with eureka with status UP
+2022-03-04 10:23:30.772 INFO  20543 --- [ main ] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1646357010772, current=UP, previous=STARTING]
+2022-03-04 10:23:30.777 INFO  20548 --- [ DiscoveryClient-InstanceInfoReplicator-0 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090: registering service...
+2022-03-04 10:23:30.987 INFO  20758 --- [ DiscoveryClient-InstanceInfoReplicator-0 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090 - registration status: 204
+2022-03-04 10:23:31.057 INFO  20828 --- [ main ] c.t.gateway.GatewayApplicationTests - Started GatewayApplicationTests in 19.703 seconds (JVM running for 22.388)
+2022-03-04 10:23:31.868 INFO  21639 --- [ SpringApplicationShutdownHook ] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application GATEWAY with eureka with status DOWN
+2022-03-04 10:23:31.868 INFO  21639 --- [ SpringApplicationShutdownHook ] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1646357011868, current=DOWN, previous=UP]
+2022-03-04 10:23:31.869 INFO  21640 --- [ DiscoveryClient-InstanceInfoReplicator-0 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090: registering service...
+2022-03-04 10:23:31.879 INFO  21650 --- [ DiscoveryClient-InstanceInfoReplicator-0 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090 - registration status: 204
+2022-03-04 10:23:32.895 INFO  22666 --- [ SpringApplicationShutdownHook ] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2022-03-04 10:23:35.905 INFO  25676 --- [ SpringApplicationShutdownHook ] c.netflix.discovery.DiscoveryClient - Unregistering ...
+2022-03-04 10:23:35.913 INFO  25684 --- [ SpringApplicationShutdownHook ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090 - deregister  status: 200
+2022-03-04 10:23:35.917 INFO  25688 --- [ SpringApplicationShutdownHook ] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2022-03-04 10:23:56.255 INFO  2050 --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.2.Final
+2022-03-04 10:23:56.318 INFO  2113 --- [ main ] c.t.gateway.GatewayApplication - Starting GatewayApplication using Java 17.0.1 on LT-joonhyuckpark with PID 4320 (C:\java\msa-workspace\gateway\target\classes started by joonhyuck.park in C:\java\msa-workspace\gateway)
+2022-03-04 10:23:56.320 INFO  2115 --- [ main ] c.t.gateway.GatewayApplication - The following 1 profile is active: "prod"
+2022-03-04 10:23:56.405 INFO  2200 --- [ main ] o.s.b.c.config.ConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-03-04 10:23:56.405 INFO  2200 --- [ main ] o.s.b.c.config.ConfigDataLoader - Located environment: name=gateway, profiles=[prod], label=null, version=null, state=null
+2022-03-04 10:23:58.047 INFO  3842 --- [ main ] o.s.c.context.scope.GenericScope - BeanFactory id=e24e896c-04cb-35e3-a98c-33d2142837fa
+2022-03-04 10:23:58.430 INFO  4225 --- [ main ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 10:23:58.433 INFO  4228 --- [ main ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 10:23:58.436 INFO  4231 --- [ main ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 10:23:58.718 INFO  4513 --- [ main ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-03-04 10:23:58.732 INFO  4527 --- [ main ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-03-04 10:23:58.733 INFO  4528 --- [ main ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-03-04 10:23:58.733 INFO  4528 --- [ main ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-04 10:24:01.370 INFO  7165 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2022-03-04 10:24:01.371 INFO  7166 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2022-03-04 10:24:01.371 INFO  7166 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2022-03-04 10:24:01.371 INFO  7166 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2022-03-04 10:24:01.371 INFO  7166 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2022-03-04 10:24:01.371 INFO  7166 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2022-03-04 10:24:01.371 INFO  7166 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2022-03-04 10:24:01.372 INFO  7167 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2022-03-04 10:24:01.372 INFO  7167 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2022-03-04 10:24:01.372 INFO  7167 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2022-03-04 10:24:01.372 INFO  7167 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2022-03-04 10:24:01.372 INFO  7167 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2022-03-04 10:24:01.372 INFO  7167 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-03-04 10:24:02.474 INFO  8269 --- [ main ] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 10:24:03.548 INFO  9343 --- [ main ] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2022-03-04 10:24:07.316 WARN  13111 --- [ main ] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 10:24:07.540 INFO  13335 --- [ main ] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-03-04 10:24:07.677 INFO  13472 --- [ main ] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2022-03-04 10:24:07.691 INFO  13486 --- [ main ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 10:24:07.763 INFO  13558 --- [ main ] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-03-04 10:24:07.763 INFO  13558 --- [ main ] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-03-04 10:24:07.763 INFO  13558 --- [ main ] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-03-04 10:24:07.764 INFO  13559 --- [ main ] c.netflix.discovery.DiscoveryClient - Application is null : false
+2022-03-04 10:24:07.764 INFO  13559 --- [ main ] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-03-04 10:24:07.764 INFO  13559 --- [ main ] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2022-03-04 10:24:07.764 INFO  13559 --- [ main ] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-03-04 10:24:08.392 INFO  14187 --- [ main ] c.netflix.discovery.DiscoveryClient - The response status is 200
+2022-03-04 10:24:08.405 INFO  14200 --- [ main ] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022-03-04 10:24:08.420 INFO  14215 --- [ main ] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-03-04 10:24:08.451 INFO  14246 --- [ main ] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1646357048449 with initial instances count: 0
+2022-03-04 10:24:08.457 INFO  14252 --- [ main ] o.s.c.n.e.s.EurekaServiceRegistry - Registering application GATEWAY with eureka with status UP
+2022-03-04 10:24:08.458 INFO  14253 --- [ main ] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1646357048458, current=UP, previous=STARTING]
+2022-03-04 10:24:08.462 INFO  14257 --- [ DiscoveryClient-InstanceInfoReplicator-0 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090: registering service...
+2022-03-04 10:24:08.517 INFO  14312 --- [ DiscoveryClient-InstanceInfoReplicator-0 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090 - registration status: 204
+2022-03-04 10:24:08.625 INFO  14420 --- [ main ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-03-04 10:24:08.695 INFO  14490 --- [ main ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-03-04 10:24:08.698 INFO  14493 --- [ main ] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9090
+2022-03-04 10:24:10.824 INFO  16619 --- [ main ] c.t.gateway.GatewayApplication - Started GatewayApplication in 16.274 seconds (JVM running for 17.818)
+2022-03-04 10:24:38.406 INFO  44201 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-03-04 10:24:38.406 INFO  44201 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-03-04 10:24:38.406 INFO  44201 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-03-04 10:24:38.406 INFO  44201 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Application is null : false
+2022-03-04 10:24:38.407 INFO  44202 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-03-04 10:24:38.407 INFO  44202 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2022-03-04 10:24:38.407 INFO  44202 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-03-04 10:24:38.413 INFO  44208 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - The response status is 200
+2022-03-04 10:29:07.772 INFO  313567 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 10:34:07.773 INFO  613568 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 10:39:07.785 INFO  913580 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 10:44:07.793 INFO  1213588 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 10:49:07.795 INFO  1513590 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 10:53:16.736 INFO  1762531 --- [ RMI TCP Connection(35)-127.0.0.1 ] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-03-04 10:53:16.737 INFO  1762532 --- [ RMI TCP Connection(35)-127.0.0.1 ] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application GATEWAY with eureka with status DOWN
+2022-03-04 10:53:16.737 INFO  1762532 --- [ RMI TCP Connection(35)-127.0.0.1 ] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1646358796737, current=DOWN, previous=UP]
+2022-03-04 10:53:16.737 INFO  1762532 --- [ DiscoveryClient-InstanceInfoReplicator-0 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090: registering service...
+2022-03-04 10:53:16.742 INFO  1762537 --- [ DiscoveryClient-InstanceInfoReplicator-0 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090 - registration status: 204
+2022-03-04 10:53:17.566 INFO  1763361 --- [ RMI TCP Connection(35)-127.0.0.1 ] c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2022-03-04 10:53:20.586 INFO  1766381 --- [ RMI TCP Connection(35)-127.0.0.1 ] c.netflix.discovery.DiscoveryClient - Unregistering ...
+2022-03-04 10:53:20.590 INFO  1766385 --- [ RMI TCP Connection(35)-127.0.0.1 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090 - deregister  status: 200
+2022-03-04 10:53:20.648 INFO  1766443 --- [ RMI TCP Connection(35)-127.0.0.1 ] c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2022-03-04 10:54:56.247 INFO  2206 --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.2.Final
+2022-03-04 10:54:56.301 INFO  2260 --- [ main ] c.t.gateway.GatewayApplication - Starting GatewayApplication using Java 17.0.1 on LT-joonhyuckpark with PID 13808 (C:\java\msa-workspace\gateway\target\classes started by joonhyuck.park in C:\java\msa-workspace\gateway)
+2022-03-04 10:54:56.302 INFO  2261 --- [ main ] c.t.gateway.GatewayApplication - The following 1 profile is active: "prod"
+2022-03-04 10:54:56.386 INFO  2345 --- [ main ] o.s.b.c.config.ConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-03-04 10:54:56.386 INFO  2345 --- [ main ] o.s.b.c.config.ConfigDataLoader - Located environment: name=gateway, profiles=[prod], label=null, version=null, state=null
+2022-03-04 10:54:59.628 INFO  5587 --- [ main ] o.s.c.context.scope.GenericScope - BeanFactory id=e24e896c-04cb-35e3-a98c-33d2142837fa
+2022-03-04 10:55:00.200 INFO  6159 --- [ main ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 10:55:00.203 INFO  6162 --- [ main ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 10:55:00.208 INFO  6167 --- [ main ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 10:55:00.602 INFO  6561 --- [ main ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-03-04 10:55:00.623 INFO  6582 --- [ main ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-03-04 10:55:00.624 INFO  6583 --- [ main ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-03-04 10:55:00.624 INFO  6583 --- [ main ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-04 10:55:05.321 INFO  11280 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2022-03-04 10:55:05.322 INFO  11281 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2022-03-04 10:55:05.322 INFO  11281 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2022-03-04 10:55:05.322 INFO  11281 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2022-03-04 10:55:05.322 INFO  11281 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2022-03-04 10:55:05.322 INFO  11281 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2022-03-04 10:55:05.323 INFO  11282 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2022-03-04 10:55:05.323 INFO  11282 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2022-03-04 10:55:05.323 INFO  11282 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2022-03-04 10:55:05.323 INFO  11282 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2022-03-04 10:55:05.324 INFO  11283 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2022-03-04 10:55:05.324 INFO  11283 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2022-03-04 10:55:05.324 INFO  11283 --- [ main ] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-03-04 10:55:06.763 INFO  12722 --- [ main ] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 10:55:07.480 INFO  13439 --- [ main ] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2022-03-04 10:55:08.656 WARN  14615 --- [ main ] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 10:55:08.761 INFO  14720 --- [ main ] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-03-04 10:55:08.833 INFO  14792 --- [ main ] c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2022-03-04 10:55:08.841 INFO  14800 --- [ main ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 10:55:08.882 INFO  14841 --- [ main ] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-03-04 10:55:08.882 INFO  14841 --- [ main ] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-03-04 10:55:08.882 INFO  14841 --- [ main ] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-03-04 10:55:08.882 INFO  14841 --- [ main ] c.netflix.discovery.DiscoveryClient - Application is null : false
+2022-03-04 10:55:08.882 INFO  14841 --- [ main ] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-03-04 10:55:08.883 INFO  14842 --- [ main ] c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2022-03-04 10:55:08.883 INFO  14842 --- [ main ] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-03-04 10:55:09.421 INFO  15380 --- [ main ] c.netflix.discovery.DiscoveryClient - The response status is 200
+2022-03-04 10:55:09.432 INFO  15391 --- [ main ] c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022-03-04 10:55:09.443 INFO  15402 --- [ main ] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-03-04 10:55:09.467 INFO  15426 --- [ main ] c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1646358909466 with initial instances count: 0
+2022-03-04 10:55:09.472 INFO  15431 --- [ main ] o.s.c.n.e.s.EurekaServiceRegistry - Registering application GATEWAY with eureka with status UP
+2022-03-04 10:55:09.473 INFO  15432 --- [ main ] c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1646358909473, current=UP, previous=STARTING]
+2022-03-04 10:55:09.476 INFO  15435 --- [ DiscoveryClient-InstanceInfoReplicator-0 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090: registering service...
+2022-03-04 10:55:09.612 INFO  15571 --- [ main ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-03-04 10:55:09.617 INFO  15576 --- [ DiscoveryClient-InstanceInfoReplicator-0 ] c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/host.docker.internal:gateway:9090 - registration status: 204
+2022-03-04 10:55:09.668 INFO  15627 --- [ main ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-03-04 10:55:09.669 INFO  15628 --- [ main ] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9090
+2022-03-04 10:55:11.495 INFO  17454 --- [ main ] c.t.gateway.GatewayApplication - Started GatewayApplication in 17.131 seconds (JVM running for 18.462)
+2022-03-04 10:55:39.436 INFO  45395 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2022-03-04 10:55:39.436 INFO  45395 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2022-03-04 10:55:39.436 INFO  45395 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2022-03-04 10:55:39.437 INFO  45396 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Application is null : false
+2022-03-04 10:55:39.437 INFO  45396 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2022-03-04 10:55:39.437 INFO  45396 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2022-03-04 10:55:39.437 INFO  45396 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2022-03-04 10:55:39.446 INFO  45405 --- [ DiscoveryClient-CacheRefreshExecutor-0 ] c.netflix.discovery.DiscoveryClient - The response status is 200
+2022-03-04 11:00:08.898 INFO  314857 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:05:08.899 INFO  614858 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:10:08.904 INFO  914863 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:15:08.908 INFO  1214867 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:20:08.921 INFO  1514880 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:25:08.931 INFO  1814890 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:30:08.938 INFO  2114897 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:35:08.939 INFO  2414898 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:40:08.952 INFO  2714911 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:45:08.965 INFO  3014924 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:50:08.979 INFO  3314938 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 11:55:08.982 INFO  3614941 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:00:08.995 INFO  3914954 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:05:08.997 INFO  4214956 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:10:08.999 INFO  4514958 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:15:09.000 INFO  4814959 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:20:09.005 INFO  5114964 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:25:09.008 INFO  5414967 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:30:09.022 INFO  5714981 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:35:09.033 INFO  6014992 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:40:09.045 INFO  6315004 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:45:09.051 INFO  6615010 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:50:09.053 INFO  6915012 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 12:55:09.058 INFO  7215017 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:00:09.065 INFO  7515024 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:05:09.069 INFO  7815028 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:10:09.075 INFO  8115034 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:15:09.086 INFO  8415045 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:20:09.091 INFO  8715050 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:25:09.093 INFO  9015052 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:30:09.103 INFO  9315062 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:35:09.107 INFO  9615066 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:40:09.119 INFO  9915078 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:45:09.133 INFO  10215092 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:50:09.138 INFO  10515097 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 13:55:09.144 INFO  10815103 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 14:00:09.159 INFO  11115118 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 14:05:09.167 INFO  11415126 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 14:10:09.168 INFO  11715127 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 14:15:09.173 INFO  12015132 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 14:20:09.185 INFO  12315144 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 14:25:09.200 INFO  12615159 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 14:30:09.201 INFO  12915160 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 14:35:09.214 INFO  13215173 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 14:40:09.214 INFO  13515173 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022-03-04 14:45:09.222 INFO  13815181 --- [ AsyncResolver-bootstrap-executor-0 ] c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

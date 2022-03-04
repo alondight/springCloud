@@ -1,0 +1,112 @@
+2022-03-04 10:21:49.625 INFO  459  --- [ main ] o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.theragenbio.discovery.DiscoveryApplicationTests], using SpringBootContextLoader
+2022-03-04 10:21:49.638 INFO  472  --- [ main ] o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.theragenbio.discovery.DiscoveryApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-03-04 10:21:49.639 INFO  473  --- [ main ] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.theragenbio.discovery.DiscoveryApplicationTests]: DiscoveryApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-03-04 10:21:49.908 INFO  742  --- [ main ] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.theragenbio.discovery.DiscoveryApplication for test class com.theragenbio.discovery.DiscoveryApplicationTests
+2022-03-04 10:21:50.189 INFO  1023 --- [ main ] o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-03-04 10:21:50.216 INFO  1050 --- [ main ] o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@307765b4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4a9e6faf, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2c95ac9e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4e4efc1b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@459f7aa3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7cc586a8, org.springframework.test.context.event.EventPublishingTestExecutionListener@7db534f2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@44a2b17b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a56812e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2a76b80a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7eb01b12, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2f4854d6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@61d9efe0]
+2022-03-04 10:21:52.736 INFO  3570 --- [ main ] c.t.d.DiscoveryApplicationTests - Starting DiscoveryApplicationTests using Java 17.0.1 on LT-joonhyuckpark with PID 21256 (started by joonhyuck.park in C:\java\msa-workspace\discovery)
+2022-03-04 10:21:52.738 INFO  3572 --- [ main ] c.t.d.DiscoveryApplicationTests - The following 1 profile is active: "prod"
+2022-03-04 10:21:52.817 INFO  3651 --- [ main ] o.s.b.c.config.ConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-03-04 10:21:52.818 INFO  3652 --- [ main ] o.s.b.c.config.ConfigDataLoader - Located environment: name=discovery, profiles=[prod], label=null, version=null, state=null
+2022-03-04 10:21:55.615 INFO  6449 --- [ main ] o.s.c.context.scope.GenericScope - BeanFactory id=0a0875a4-68ce-3cdd-8940-2894c9959503
+2022-03-04 10:22:03.602 INFO  14436 --- [ main ] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2022-03-04 10:22:06.880 WARN  17714 --- [ main ] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 10:22:07.403 INFO  18237 --- [ main ] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-03-04 10:22:10.374 INFO  21208 --- [ main ] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 10:22:10.544 INFO  21378 --- [ main ] o.s.c.n.e.s.EurekaServiceRegistry - Registering application DISCOVERY with eureka with status UP
+2022-03-04 10:22:10.550 INFO  21384 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerBootstrap - Setting the eureka configuration..
+2022-03-04 10:22:10.582 INFO  21416 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2022-03-04 10:22:10.584 INFO  21418 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2022-03-04 10:22:10.605 INFO  21439 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2022-03-04 10:22:10.624 INFO  21458 --- [ main ] c.t.d.DiscoveryApplicationTests - Started DiscoveryApplicationTests in 20.279 seconds (JVM running for 23.035)
+2022-03-04 10:22:12.120 INFO  22954 --- [ SpringApplicationShutdownHook ] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DISCOVERY with eureka with status DOWN
+2022-03-04 10:22:12.125 INFO  22959 --- [ SpringApplicationShutdownHook ] o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+2022-03-04 10:22:12.175 INFO  23009 --- [ SpringApplicationShutdownHook ] o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+2022-03-04 10:22:32.531 INFO  2376 --- [ main ] c.t.discovery.DiscoveryApplication - Starting DiscoveryApplication using Java 17.0.1 on LT-joonhyuckpark with PID 10816 (C:\java\msa-workspace\discovery\target\classes started by joonhyuck.park in C:\java\msa-workspace\discovery)
+2022-03-04 10:22:32.536 INFO  2381 --- [ main ] c.t.discovery.DiscoveryApplication - The following 1 profile is active: "prod"
+2022-03-04 10:22:32.592 INFO  2437 --- [ main ] o.s.b.c.config.ConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-03-04 10:22:32.592 INFO  2437 --- [ main ] o.s.b.c.config.ConfigDataLoader - Located environment: name=discovery, profiles=[prod], label=null, version=null, state=null
+2022-03-04 10:22:34.011 INFO  3856 --- [ main ] o.s.c.context.scope.GenericScope - BeanFactory id=6ae2b968-6276-3792-8311-92a0f0e13588
+2022-03-04 10:22:34.712 INFO  4557 --- [ main ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8761 (http)
+2022-03-04 10:22:34.723 INFO  4568 --- [ main ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+2022-03-04 10:22:34.723 INFO  4568 --- [ main ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-03-04 10:22:34.724 INFO  4569 --- [ main ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-04 10:22:34.891 INFO  4736 --- [ main ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-03-04 10:22:34.891 INFO  4736 --- [ main ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2297 ms
+2022-03-04 10:22:36.845 INFO  6690 --- [ main ] c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2022-03-04 10:22:38.307 INFO  8152 --- [ RMI TCP Connection(3)-127.0.0.1 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-04 10:22:38.308 INFO  8153 --- [ RMI TCP Connection(3)-127.0.0.1 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-03-04 10:22:38.419 INFO  8264 --- [ RMI TCP Connection(3)-127.0.0.1 ] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 10:22:38.441 INFO  8286 --- [ RMI TCP Connection(3)-127.0.0.1 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 132 ms
+2022-03-04 10:22:39.213 INFO  9058 --- [ main ] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2022-03-04 10:22:39.971 WARN  9816 --- [ main ] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 10:22:39.993 INFO  9838 --- [ main ] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-03-04 10:22:40.685 INFO  10530 --- [ main ] o.s.c.n.e.s.EurekaServiceRegistry - Registering application DISCOVERY with eureka with status UP
+2022-03-04 10:22:40.688 INFO  10533 --- [ main ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+2022-03-04 10:22:40.688 INFO  10533 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerBootstrap - Setting the eureka configuration..
+2022-03-04 10:22:40.698 INFO  10543 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2022-03-04 10:22:40.700 INFO  10545 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2022-03-04 10:22:40.733 INFO  10578 --- [ main ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8761 (http) with context path ''
+2022-03-04 10:22:40.734 INFO  10579 --- [ main ] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2022-03-04 10:22:40.794 INFO  10639 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2022-03-04 10:22:41.520 INFO  11365 --- [ main ] c.t.discovery.DiscoveryApplication - Started DiscoveryApplication in 11.03 seconds (JVM running for 12.061)
+2022-03-04 10:53:22.785 INFO  1852630 --- [ RMI TCP Connection(36)-127.0.0.1 ] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-03-04 10:53:22.785 INFO  1852630 --- [ RMI TCP Connection(36)-127.0.0.1 ] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DISCOVERY with eureka with status DOWN
+2022-03-04 10:53:22.816 INFO  1852661 --- [ RMI TCP Connection(36)-127.0.0.1 ] o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+2022-03-04 10:53:22.865 INFO  1852710 --- [ RMI TCP Connection(36)-127.0.0.1 ] c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2022-03-04 10:53:22.878 INFO  1852723 --- [ RMI TCP Connection(36)-127.0.0.1 ] c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2022-03-04 10:53:22.882 INFO  1852727 --- [ RMI TCP Connection(36)-127.0.0.1 ] c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2022-03-04 10:53:22.887 INFO  1852732 --- [ RMI TCP Connection(36)-127.0.0.1 ] c.n.servo.monitor.StatsMonitor - Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2022-03-04 10:53:23.049 INFO  1852894 --- [ RMI TCP Connection(36)-127.0.0.1 ] o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+2022-03-04 10:54:38.577 INFO  1938 --- [ main ] c.t.discovery.DiscoveryApplication - Starting DiscoveryApplication using Java 17.0.1 on LT-joonhyuckpark with PID 21172 (C:\java\msa-workspace\discovery\target\classes started by joonhyuck.park in C:\java\msa-workspace\discovery)
+2022-03-04 10:54:38.581 INFO  1942 --- [ main ] c.t.discovery.DiscoveryApplication - The following 1 profile is active: "prod"
+2022-03-04 10:54:38.635 INFO  1996 --- [ main ] o.s.b.c.config.ConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-03-04 10:54:38.635 INFO  1996 --- [ main ] o.s.b.c.config.ConfigDataLoader - Located environment: name=discovery, profiles=[prod], label=null, version=null, state=null
+2022-03-04 10:54:40.193 INFO  3554 --- [ main ] o.s.c.context.scope.GenericScope - BeanFactory id=6ae2b968-6276-3792-8311-92a0f0e13588
+2022-03-04 10:54:40.959 INFO  4320 --- [ main ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8761 (http)
+2022-03-04 10:54:40.974 INFO  4335 --- [ main ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+2022-03-04 10:54:40.975 INFO  4336 --- [ main ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-03-04 10:54:40.975 INFO  4336 --- [ main ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-04 10:54:41.175 INFO  4536 --- [ main ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-03-04 10:54:41.176 INFO  4537 --- [ main ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2539 ms
+2022-03-04 10:54:43.303 INFO  6664 --- [ main ] c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2022-03-04 10:54:45.363 INFO  8724 --- [ RMI TCP Connection(3)-127.0.0.1 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-04 10:54:45.363 INFO  8724 --- [ RMI TCP Connection(3)-127.0.0.1 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-03-04 10:54:45.583 INFO  8944 --- [ main ] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2022-03-04 10:54:46.429 WARN  9790 --- [ main ] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 10:54:46.439 INFO  9800 --- [ RMI TCP Connection(3)-127.0.0.1 ] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 10:54:46.457 INFO  9818 --- [ RMI TCP Connection(3)-127.0.0.1 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1094 ms
+2022-03-04 10:54:46.484 INFO  9845 --- [ main ] o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022-03-04 10:54:47.153 INFO  10514 --- [ main ] o.s.c.n.e.s.EurekaServiceRegistry - Registering application DISCOVERY with eureka with status UP
+2022-03-04 10:54:47.155 INFO  10516 --- [ main ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+2022-03-04 10:54:47.155 INFO  10516 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerBootstrap - Setting the eureka configuration..
+2022-03-04 10:54:47.165 INFO  10526 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2022-03-04 10:54:47.166 INFO  10527 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2022-03-04 10:54:47.210 INFO  10571 --- [ main ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8761 (http) with context path ''
+2022-03-04 10:54:47.211 INFO  10572 --- [ main ] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2022-03-04 10:54:47.239 INFO  10600 --- [ Thread-9 ] o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2022-03-04 10:54:47.866 INFO  11227 --- [ main ] c.t.discovery.DiscoveryApplication - Started DiscoveryApplication in 10.927 seconds (JVM running for 12.142)
+2022-03-04 10:58:45.691 WARN  249052 --- [ AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}} ] z.r.AsyncReporter$BoundedAsyncReporter - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2022-03-04 10:58:45.693 WARN  249054 --- [ AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}} ] z.r.AsyncReporter$BoundedAsyncReporter - Dropped 3 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Unexpected end of file from server; nested exception is java.net.SocketException: Unexpected end of file from server)
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Unexpected end of file from server; nested exception is java.net.SocketException: Unexpected end of file from server
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.cloud.sleuth.zipkin2.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateWrapper.java:69)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:660)
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.post(RestTemplateSender.java:151)
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:169)
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:159)
+	at zipkin2.Call$Base.execute(Call.java:391)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: Unexpected end of file from server
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:903)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:726)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1688)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:529)
+	at org.springframework.http.client.SimpleClientHttpResponse.getRawStatusCode(SimpleClientHttpResponse.java:55)
+	at org.springframework.web.client.DefaultResponseErrorHandler.hasError(DefaultResponseErrorHandler.java:61)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:807)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	... 9 common frames omitted
