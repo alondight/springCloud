@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(name = "serviceA", fallbackFactory = ServiceAFeignClientFallbackFactory.class)
 public interface ServiceAInterface {
-    @GetMapping("/user/")
-    String getAllUsers() throws Exception;
+	@GetMapping("/user/")
+	String getAllUsers() throws Exception;
 
 	@GetMapping("/user/{userId}")
 	String getUserWithUserId(@PathVariable("userId") int userId) throws Exception;

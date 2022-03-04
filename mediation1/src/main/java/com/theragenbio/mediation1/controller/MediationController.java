@@ -12,7 +12,6 @@ public class MediationController {
 	@Autowired
 	ServiceAInterface serviceA;
 
-
 	@Autowired
 	ServiceBInterface serviceB;
 
@@ -21,7 +20,6 @@ public class MediationController {
 	{
 		System.out.println("SERVICE 1 --SETTING--");
 		return serviceA.getAllUsers();
-		
 	}
 
 	@GetMapping(path = "/svc")
@@ -29,7 +27,6 @@ public class MediationController {
 	{
 		System.out.println("SERVICE 1 --SETTING--");
 		return serviceB.getAllDepartments();
-		
 	}
-	
+
 }

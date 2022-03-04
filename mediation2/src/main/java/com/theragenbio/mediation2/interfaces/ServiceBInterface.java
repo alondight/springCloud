@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(name = "serviceB")
 public interface ServiceBInterface {
-    @GetMapping("/dept/")
-    String getAllDepartments() throws Exception;
+	@GetMapping("/dept/")
+	String getAllDepartments() throws Exception;
 
 	@GetMapping("/dept/{deptId}")
 	String findByDepartmentId(@PathVariable("deptId") int userId) throws Exception;
