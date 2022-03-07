@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import lombok.extern.slf4j.Slf4j;
+
 @FeignClient(name = "serviceA", fallbackFactory = ServiceAFeignClientFallbackFactory.class)
 public interface ServiceAInterface {
 	@GetMapping("/user/")
@@ -15,26 +17,24 @@ public interface ServiceAInterface {
 	String getUserWithUserId(@PathVariable("userId") int userId) throws Exception;
 }
 
+@Slf4j
 @Component
 class ServiceAFeignClientFallbackFactory implements FallbackFactory<ServiceAInterface> {
-    @Override
-    public ServiceAInterface create(Throwable t) {
-        return new ServiceAInterface() {
+	@Override
+	public ServiceAInterface create(Throwable t) {
+		return new ServiceAInterface() {
 
 			@Override
 			public String getAllUsers() throws Exception {
-                System.out.println("************************");
-                t.printStackTrace();
-                return null;
+				t.printStackTrace();
+				return null;
 			}
 
 			@Override
 			public String getUserWithUserId(int userId) throws Exception {
-                System.out.println("************************");
-                t.printStackTrace();
-                return null;
+				t.printStackTrace();
+				return null;
 			}
-        };
-    }
-
+		};
+	}
 }

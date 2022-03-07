@@ -9,7 +9,6 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 public class DiscoveryApplication {
 
 	public static void main(String[] args) {
-		System.out.println("===DiscoveryApplication===");
 		SpringApplication.run(DiscoveryApplication.class, args);
 	}
 
