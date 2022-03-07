@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - 9411:9411
+    networks:
+      - mysql_default
+    environment:
+       - STORAGE_TYPE=mysql
+       - MYSQL_HOST=mysql
+       - MYSQL_TCP_PORT=3306
+       - MYSQL_DB=msa
+       - MYSQL_USER=root
+       - MYSQL_PASS=1111
+      # - MYSQL_MAX_CONNECTIONS=10 (default)
+      # - MYSQL_USER_SSL=false (default)
+
+networks:
+  mysql_default:
+    external:
+      name: mysql_default
