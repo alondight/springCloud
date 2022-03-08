@@ -21,7 +21,7 @@ public class JwtAuthenticationController {
 	@Autowired
 	private JwtTokenUtil jwtTokenUtil;
 
-	@RequestMapping(value = "/auth", method = RequestMethod.GET)
+	@RequestMapping(value = "/auth", method = {RequestMethod.GET,RequestMethod.POST})
 	public ResponseEntity<?> createAuthenticationToken(Authentication authentication, HttpServletResponse response)
 			throws Exception {
 

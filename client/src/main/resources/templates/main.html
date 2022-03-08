@@ -1,1 +1,49 @@
-MAIN__SUCCESS
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</head>
+	<body>
+    <div class="container">
+	<div>
+		username : <th:block th:text="${data.username}"/><br />
+		token : <th:block th:text="${data.token}"/>
+	</div>
+
+        <h1>유저 리스트</h1>
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>no</th>
+                    <th>firstName</th>
+                    <th>lastName</th>
+                    <th>emailId</th>
+                    <th>departmentId</th>
+                </tr>
+            </thead>
+            <tbody id="useList"></tbody>
+        </table>
+    </div>
+<script>
+$( document ).ready(function() {
+    $.ajax({
+        type: "GET",
+        headers: {
+            "Authorization" : "Bearer [[${data.token}]]",
+        },
+        url:"http://localhost:9090/api",
+        dataType:"json",
+        success : function(rtn){
+        	for(let node of rtn)
+        		$("#useList").append("<tr><td>"+node.userId+"</td><td>"+node.firstName+"</td><td>"+node.lastName+"</td><td>"+node.emailId+"</td><td>"+node.departmentId+"</td></tr>");
+        }
+    });
+});
+</script>
+	</body>
+</html>
