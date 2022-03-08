@@ -11,8 +11,15 @@ public class RabbitMQClient {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@RabbitListener(queues = "sample.queue")
-	public void receiveMessage(Message  message ) throws Exception{
+	@RabbitListener(queues = "sample.queue1")
+	public void receiveMessage1(Message  message ) throws Exception{
 		logger.info(message.toString());
 	}
+
+	@RabbitListener(queues = "sample.queue2")
+	public void receiveMessage2(Message  message ) throws Exception{
+		logger.info(message.toString());
+	}
+
+
 }

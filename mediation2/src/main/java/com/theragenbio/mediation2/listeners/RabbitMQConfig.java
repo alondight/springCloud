@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitMQConfig  {
-	private static final String QUEUE_NAME = "sample.queue";
+	private static final String QUEUE_NAME = "rabbitmq-queue";
+	private static final String EXCHANGE_NAME = "publish-exchange";
 
 	@Bean
 	public  Queue queue() {
@@ -20,17 +21,36 @@ public class RabbitMQConfig  {
 
 	@Bean
 	TopicExchange exchange() {
-		return new TopicExchange("spring-boot-exchange", true, false);
+		return new TopicExchange(EXCHANGE_NAME, true, false);
 	}
 
 	@Bean
-	Binding binding(Queue queue, TopicExchange exchange) {
-		return BindingBuilder.bind(queue).to(exchange).with(QUEUE_NAME);
+	public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
+		RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
+		return rabbitTemplate;
 	}
 
-    @Bean
-    public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
-        RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
-        return rabbitTemplate;
-    }
+
+
+
+	// CUSTOM LISTENER
+	@Bean
+	Queue queue1() {
+		return new Queue("sample.queue1", false);
+	}
+
+	@Bean
+	Queue queue2() {
+		return new Queue("sample.queue2", false); 
+	}
+
+	@Bean
+	Binding binding1(TopicExchange exchange) {
+	    return BindingBuilder.bind(queue1()).to(exchange).with(queue1().getName());
+	}
+
+	@Bean
+	Binding binding2(TopicExchange exchange) {
+	    return BindingBuilder.bind(queue2()).to(exchange).with(queue2().getName());
+	}
 }
