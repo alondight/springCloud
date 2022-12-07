@@ -1,5 +1,9 @@
 package com.theragenbio.client.controller;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,6 +28,7 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -37,7 +42,7 @@ public class ClientController {
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
 
-	@GetMapping(path = "/login")
+	@GetMapping(value = {"", "/", "/index", "/login"})
 	public String login() throws Exception
 	{
 		logger.info("--login--");
@@ -122,6 +127,46 @@ public class ClientController {
 		modelAndView.addObject("data", map);
 
 		return modelAndView;
+	}
+
+	@ResponseBody
+	@GetMapping(path = "/queue")
+	public String queue(HttpServletRequest request) throws Exception
+	{
+		logger.info("--queue--");
+
+		// 로그인 성공 후 session에 token 저장
+		HttpSession session = request.getSession();
+		String username = (String)session.getAttribute("username");
+		String token =    (String)session.getAttribute("token");
+
+		if(username == null || token == null ) {
+			logger.error("Login Error");
+
+			return null;
+		}
+
+		// Parameters
+		String loginUrl = "http://localhost:9090/api/sample/queue1";
+		try {
+			URL url = new URL(loginUrl);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod("GET");
+			conn.setRequestProperty("Accept", "application/json");
+			conn.setRequestProperty("Authorization", "Bearer " + token);
+			if (conn.getResponseCode() != 200) {
+				throw new RuntimeException("Failed : HTTP Error code : " + conn.getResponseCode());
+			}
+	
+			InputStreamReader in = new InputStreamReader(conn.getInputStream());
+			BufferedReader br = new BufferedReader(in);
+			return br.toString();
+
+		} catch (Exception e) {
+			logger.info("Exception in NetClientGet:- " + e);
+		}
+
+		return null;
 	}	
 	
 }

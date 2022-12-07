@@ -46,17 +46,17 @@ public class MediationController {
 
 
 	@GetMapping("/sample/queue1")
-	public String samplePublish1() {
+	public String samplePublish1() throws Exception {
 		logger.info("SERVICE 1 --samplePublish1--");
 		rabbitTemplate.convertAndSend(EXCHANGE_NAME, "sample.queue1", "queue1 success!");
-		return "message sending!";
+		return serviceA.getAllUsers();
 	}
 
 	@GetMapping("/sample/queue2")
-	public String samplePublish2() {
+	public String samplePublish2() throws Exception {
 		logger.info("SERVICE 1 --samplePublish2--");
 		rabbitTemplate.convertAndSend(EXCHANGE_NAME, "sample.queue2", "queue2 success!");
-		return "message sending!";
+		return serviceB.getAllDepartments();
 	}
 
 
