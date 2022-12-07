@@ -6,8 +6,6 @@ services:
     container_name: zipkin
     ports:
       - 9411:9411
-    networks:
-      - mysql_default
     environment:
        - STORAGE_TYPE=mysql
        - MYSQL_HOST=mysql
@@ -19,6 +17,6 @@ services:
       # - MYSQL_USER_SSL=false (default)
 
 networks:
-  mysql_default:
-    external:
-      name: mysql_default
+  default:
+      name: msa_network
+      external: true
